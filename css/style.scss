@@ -1,0 +1,104 @@
+@mixin fontsize($size: 24) {
+    font-size: $size + px;
+    font-size: ($size / 10) * 1rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+$font: 'Lato',
+sans-serif;
+
+$white: #dddddd;
+$gray : #808080;
+
+$bold: 700;
+$light: 300;
+
+.container{
+    max-width: 100%;
+    width: 100%;
+    margin: 0 0 0 0;
+}
+
+.container:after, .row:after, .u-cf {
+    display: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+body {    
+    background-color: #000000;
+    font-family: $font;
+    color: $white;
+
+
+}
+header{
+    h1{ 
+        padding: 10px 0 0 15px;
+        font-size: 2.6rem;
+        font-weight: $bold;
+        letter-spacing: 0.1em;
+    }
+}
+
+
+#main{
+    min-height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .row{
+        width: 100%;
+    }
+
+    img{
+        width: 100%;
+    }
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+
+    .six.columns.copyright{
+        padding-top: 8px;
+    }
+
+    
+    small{
+        font-size: 1.7rem;
+        color: $gray;
+        padding: 0 0 10px 15px;
+    }
+
+    .pc_navi{
+
+        ul.pc_navi_li{
+            display: flex;
+            list-style: none;
+            place-content: flex-end;
+            font-size: 2.3rem;
+            font-weight: $light;
+            letter-spacing:0.05em;
+            margin: 0;
+            padding: 0 10px 0 0;
+
+            a{
+                text-decoration: none;
+                color: $white; 
+            }
+
+        li{
+            padding: 0 30px 10px 10px;
+            margin: 0;
+        }
+        }
+    }
+}

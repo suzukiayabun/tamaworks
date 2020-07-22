@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+.container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 0 0 0;
+}
+
+.container:after, .row:after, .u-cf {
+  display: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #000000;
+  font-family: "Lato", sans-serif;
+  color: #dddddd;
+}
+
+header h1 {
+  padding: 10px 0 0 15px;
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+#main {
+  min-height: 100vh;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main .row {
+  width: 100%;
+}
+
+#main img {
+  width: 100%;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+}
+
+footer .six.columns.copyright {
+  padding-top: 8px;
+}
+
+footer small {
+  font-size: 1.7rem;
+  color: #808080;
+  padding: 0 0 10px 15px;
+}
+
+footer .pc_navi ul.pc_navi_li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  place-content: flex-end;
+  font-size: 2.3rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  margin: 0;
+  padding: 0 10px 0 0;
+}
+
+footer .pc_navi ul.pc_navi_li a {
+  text-decoration: none;
+  color: #dddddd;
+}
+
+footer .pc_navi ul.pc_navi_li li {
+  padding: 0 30px 10px 10px;
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */
